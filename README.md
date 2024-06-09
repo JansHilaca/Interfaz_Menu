@@ -13,46 +13,20 @@
 
 Este proyecto implementa una aplicación básica de JavaFX con una interfaz gráfica de usuario (GUI) que incluye una barra de menú.
 
-## Descripción
+## Funcionalidades:
 
-La aplicación presenta una ventana con una barra de menú en la parte superior, que contiene los menús "Archivo", "Editar" y "Ayuda". Cada menú incluye varios elementos de menú, algunos de los cuales realizan acciones específicas, como cerrar la aplicación o mostrar información en la consola.
+- **Nuevo:** Al seleccionar esta opción, se abre un diálogo que permite al usuario crear un nuevo archivo. Una vez que el usuario ingresa el nombre del nuevo archivo y lo confirma, el nombre se muestra en la consola como feedback para la acción realizada.
 
-## Estructura del Código
+- **Abrir:** Esta opción abre un cuadro de diálogo que permite al usuario seleccionar un archivo existente. Una vez que el usuario selecciona un archivo y lo confirma, el nombre del archivo seleccionado se muestra en la consola para indicar que la acción ha sido realizada.
 
-### Paquete y Clase Principal
+- **Guardar:** Al seleccionar esta opción, se abre un diálogo para guardar un archivo. Se escribe un contenido de ejemplo en el archivo, y una vez que el usuario guarda el archivo y lo confirma, se muestra el nombre del archivo en la consola como confirmación de la acción completada.
 
-- **Paquete y Declaración de Clase**: La clase `GUIJavaFX` pertenece al paquete `Main` y extiende `Application`, lo que la convierte en una aplicación JavaFX.
+- **Salir:** Cuando se selecciona esta opción, se muestra un cuadro de confirmación pidiendo al usuario que confirme si realmente desea cerrar la aplicación. Si el usuario confirma, la aplicación se cierra. Este enfoque proporciona una experiencia más amigable al usuario al evitar cierres accidentales.
 
-### Método `start`
+- **Cortar, Copiar y Pegar:** Aunque estos elementos de menú se incluyen en la barra de menú, actualmente no tienen ninguna acción asociada en el código proporcionado. Podrían implementarse en futuras iteraciones de desarrollo para mejorar la funcionalidad de la aplicación.
 
-- **Sobrescribe el Método `start`**: Sobrescribe el método `start` para configurar la interfaz de usuario. Este método es el punto de entrada principal de la aplicación JavaFX y recibe un objeto `Stage`, que representa la ventana principal.
+- **Acerca de:** Esta opción muestra información sobre la aplicación en un cuadro de diálogo. Al seleccionarla, se muestra un mensaje en la consola que proporciona detalles sobre la aplicación, como su nombre, versión o información de contacto. Esto puede ayudar a los usuarios a comprender mejor el propósito y la función de la aplicación.
 
-### Layout Principal
-
-- **Uso de BorderPane**: Utiliza un `BorderPane` como layout principal. El `BorderPane` permite organizar la interfaz en cinco regiones: superior, inferior, izquierda, derecha y centro.
-
-### Barra de Menú
-
-- **Creación de MenuBar**: Crea una barra de menú (`MenuBar`).
-- **Menús Principales**: Añade tres menús principales: "Archivo", "Editar" y "Ayuda".
-- **Elementos de Menú**: Añade elementos de menú a cada menú principal. Por ejemplo, el menú "Archivo" incluye elementos como "Nuevo", "Abrir", "Guardar" y "Salir". Además, se utilizan separadores (`SeparatorMenuItem`) para organizar los elementos de manera lógica.
-
-### Acciones de los Menús
-
-- **Definición de Acciones**: Define acciones para ciertos elementos de menú. Por ejemplo:
-  - **Salir**: Al seleccionar "Salir", la aplicación se cierra mediante `System.exit(0)`.
-  - **Acerca de**: Al seleccionar "Acerca de", se muestra un mensaje en la consola indicando "Información de la aplicación".
-
-### Configuración de la Ventana
-
-- **Creación de la Escena**: Crea una escena (`Scene`) con el `BorderPane` como raíz y especifica un tamaño de 400x300 píxeles.
-- **Establecimiento de la Escena en el Escenario Principal**: Establece la escena en el escenario principal (`primaryStage`).
-- **Título de la Ventana**: Fija el título de la ventana como "Interfaz Gráfica de Usuario en JavaFX".
-- **Mostrar la Ventana**: Llama al método `show()` del `primaryStage` para mostrar la ventana.
-
-### Método Principal
-
-- **Lanzamiento de la Aplicación**: El método `main` lanza la aplicación llamando a `launch(args)`. Este método es el punto de entrada estándar de cualquier aplicación JavaFX.
 
 ## Código
 
