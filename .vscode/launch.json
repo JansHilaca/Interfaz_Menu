@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GUIJavaFX",
+            "request": "launch",
+            "mainClass": "Main.GUIJavaFX",
+            "projectName": "Inerffaz_Menu_ff7ffac3",
+            "vmArgs": "--module-path c:\\Users\\jansh\\OneDrive\\Escritorio\\javafx-sdk-17.0.8\\lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "GUIJavaFX",
+            "request": "launch",
+            "mainClass": "GUIJavaFX",
+            "projectName": "Inerffaz_Menu_ff7ffac3",
+            "vmArgs": "--module-path c:\\Users\\jansh\\OneDrive\\Escritorio\\javafx-sdk-17.0.8\\lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}
